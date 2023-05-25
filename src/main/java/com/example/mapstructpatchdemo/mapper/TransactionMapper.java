@@ -20,5 +20,5 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 public interface TransactionMapper {
     void patchTransactionEntity(@MappingTarget TransactionEntity transactionEntity, TransactionPatch patch);
 
-    void patchAddressEntity(@MappingTarget AddressEntity addressEntity, AddressPatch source);
+    AddressEntity addressPatchToAddressEntity(AddressPatch source);
 }
